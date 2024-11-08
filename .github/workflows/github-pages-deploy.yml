@@ -4,6 +4,9 @@ on:
   push:
     branches: [ main ]
 
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -29,5 +32,5 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        folder: mangaconnect/build # ou dist, selon votre configuration
-        branch: gh-pages 
+        folder: mangaconnect/build # ou mangaconnect/dist selon votre configuration
+        branch: gh-pages
