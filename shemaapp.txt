@@ -1,0 +1,65 @@
+1. Page de Connexion (Login)
+2. Page d'Inscription (Signup)
+3. Page d'Accueil (Home)
+4. Page de Détail du Manga (Manga Detail)
+5. Tableau de Bord Admin (Admin Dashboard)
+
+
+1. Page de Connexion (Login)
+
+Éléments :
+- Champ Email
+- Champ Mot de Passe
+- Bouton "Se connecter"
+- Lien "Créer un compte" redirigeant vers la page d'inscription
+
+Disposition :
+- Centrer un formulaire simple avec deux champs d'entrée (Email, Mot de Passe) et un bouton "Se connecter".
+- En dessous, ajouter un lien vers l'inscription.
+
+2. Page d'Inscription (Signup)
+
+Éléments :
+- Champ Nom d'utilisateur
+- Champ Email
+- Champ Mot de Passe
+- Bouton "S'inscrire"
+- Lien "Se connecter" redirigeant vers la page de connexion
+
+Disposition :
+- Similaire à la page de connexion, mais avec un champ supplémentaire pour le nom d'utilisateur.
+- Le lien redirige vers la page de connexion si l'utilisateur a déjà un compte.
+
+3. Page d'Accueil (Home)
+
+Éléments :
+- Barre de navigation en haut avec des liens (Accueil, Mon compte, Se déconnecter)
+- Liste des mangas disponibles avec leur couverture, titre, et un court résumé
+- Section recommandée en haut ou à côté basée sur l'historique de lecture de l'utilisateur
+
+Disposition :
+- La page est structurée avec une barre de navigation en haut et une grille ou une liste d'images de mangas (vignettes), chacune cliquable pour voir plus de détails.
+
+4. Page de Détail du Manga (Manga Detail)
+
+Éléments :
+- Image de couverture du manga
+- Titre du manga
+- Auteur, Genre, Date de publication
+- Description complète
+- Bouton "Ajouter à ma liste" ou "Commencer la lecture"
+
+Disposition :
+- Une mise en page verticale avec l'image de couverture en haut, suivie des informations sur le manga, et enfin un bouton d'action pour commencer à lire ou ajouter à la liste.
+
+5. Tableau de Bord Admin (Admin Dashboard)
+
+Éléments :
+- Tableau avec les mangas disponibles
+- Bouton "Ajouter un nouveau manga"
+- Fonctionnalité pour éditer ou supprimer un manga
+- Champ de recherche pour filtrer les mangas
+
+Disposition :
+- Un tableau avec des colonnes pour le titre du manga, l'auteur, le genre, et des actions comme "Éditer" ou "Supprimer".
+- Un bouton "Ajouter un nouveau manga" au-dessus du tableau.

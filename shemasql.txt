@@ -1,0 +1,27 @@
+-- Table Users
+CREATE TABLE Users (
+    user_id SERIAL PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password_hash VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Table Mangas
+CREATE TABLE Mangas (
+    manga_id SERIAL PRIMARY KEY,
+    title VARCHAR(100) NOT NULL,
+    description TEXT,
+    author VARCHAR(50),
+    published_at DATE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Table ReadHistory
+CREATE TABLE ReadHistory (
+    history_id SERIAL PRIMARY KEY,
+    user_id INT REFERENCES Users(user_id) ON DELETE CASCADE,
+    manga_id INT REFERENCES Mangas(manga_id) ON DELETE CASCADE,
+    last_read TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    times_read INT DEFAULT 1
+);
